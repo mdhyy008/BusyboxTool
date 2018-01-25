@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical"
+	android:background="#8DA5B2"
+	android:padding="10dp">
+
+	<TextView
+		android:layout_height="wrap_content"
+		android:layout_width="wrap_content"
+		android:text="Busybox介绍"
+		android:textSize="19sp"
+		android:textStyle="bold"/>
+
+	<TextView
+		android:layout_height="wrap_content"
+		android:layout_width="wrap_content"
+		android:text="BusyBox 是一个集成了三百多个最常用Linux命令和工具的软件。BusyBox 包含了一些简单的工具，例如ls、cat和echo等等，还包含了一些更大、更复杂的工具，例grep、find、mount以及telnet。有些人将 BusyBox 称为 Linux 工具里的瑞士军刀。简单的说BusyBox就好像是个大工具箱，它集成压缩了 Linux 的许多工具和命令，也包含了 Android 系统的自带的shell。"
+		android:textSize="15sp"/>
+
+	<TextView
+		android:layout_height="wrap_content"
+		android:layout_width="wrap_content"
+		android:text="软件使用协议"
+		android:textSize="19sp"
+		android:layout_marginTop="10dp"
+		android:textStyle="bold"/>
+
+	<TextView
+		android:layout_height="wrap_content"
+		android:layout_width="wrap_content"
+		android:text="首先,使用本软件你需要知道busybox到底是什么,以及对你手机的好处和造成的伤害.如果自己不了解,请去酷安-本软件的评论区查看,或者百度一下\n本软件需要用到读写SD卡权限、网络访问权限、Root权限,缺一不可"
+		android:textSize="15sp"/>
+
+	<TextView
+		android:layout_height="wrap_content"
+		android:layout_width="wrap_content"
+		android:text="使用技巧"
+		android:textSize="19sp"
+		android:textStyle="bold"
+		android:layout_marginTop="10dp"/>
+
+	<TextView
+		android:layout_height="wrap_content"
+		android:layout_width="wrap_content"
+		android:text="可以这样用busybox  #busybox ls  他的功能就相当运行ls命令  最常用的用法是建立指向busybox的链接,不同的链接名完成不同的功能.  #ln -s busybox ls  #ln -s busybox rm  #ln -s busybox mkdir  然后分别运行这三个链接:  #./ls  #./rm  #./mkdir  就可以分别完成了ls rm 和mkdir命令的功能.虽然他们都指向同一个可执行程序busybox，但是只要链接名不同,完成的功能就不同，很多linux网站都提供busybox的源代码下载。"
+		android:textSize="15sp"/>
+
+	<LinearLayout
+		android:layout_height="wrap_content"
+		android:layout_width="match_parent"
+		android:orientation="horizontal"
+		android:gravity="right"
+		android:layout_marginTop="10dp">
+
+		<TextView
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:text="是否同意使用协议"
+			android:layout_gravity="center"
+			android:textColor="#E91E63"/>
+
+		<CheckBox
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:layout_gravity="center"
+			android:id="@+id/mainCheckBox1"/>
+
+	</LinearLayout>
+
+</LinearLayout>
+
